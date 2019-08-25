@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SSB</string>
+    <string name="title_activity_whats_ssb">whats_ssb</string>
+    <string name="center">Select A SSB Center</string>
+    <string-array name="centers_array">
+        <item>SCN KAPURTHALA,PUNJAB</item>
+        <item>NSB COIAMBATORE</item>
+    </string-array>
+</resources>
