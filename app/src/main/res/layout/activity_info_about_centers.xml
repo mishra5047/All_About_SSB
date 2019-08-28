@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".info_about_centers">
 
+    <ImageView
+        android:id="@+id/logo_new"
+        android:layout_width="236dp"
+        android:layout_height="182dp"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
     <Button
         android:layout_width="70dp"
         android:id="@+id/share"
@@ -14,14 +20,18 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="6dp"
-        android:background="#000000"
+        android:background="@drawable/circle_new"
         android:text="SHARE"
+        android:textStyle="italic"
+        android:textSize="15sp"
         android:textColor="#FFFFFF" />
 
     <Spinner
         android:layout_width="match_parent"
+        android:layout_below="@id/logo_new"
         android:id="@+id/spinner_centers"
         android:textAlignment="center"
+        android:layout_marginTop="50dp"
         android:prompt="@string/center"
         android:layout_height="100dp">
 

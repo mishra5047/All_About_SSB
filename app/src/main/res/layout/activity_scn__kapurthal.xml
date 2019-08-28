@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SCN_KAPURTHALA">
+
+   <ImageView
+       android:layout_width="150dp"
+       android:id="@+id/logo"
+       android:layout_height="150dp"
+       android:src="@drawable/logo"
+       android:layout_centerHorizontal="true"
+       />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/centername"
+    android:layout_below="@id/logo"
+    android:text="@string/kapurthala"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    android:textStyle="bold"
+
+    />
+           <RelativeLayout
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:id="@+id/hotel_tab"
+               android:background="@drawable/layout_new"
+               android:layout_height="120dp"
+               android:layout_below="@id/howtoreach_tab">
+
+               <ImageView
+                   android:id="@+id/hotel_logo"
+                   android:layout_width="91dp"
+                   android:layout_height="107dp"
+                   android:layout_marginTop="5dp"
+                   android:src="@drawable/hotel_logo"
+                   android:layout_marginLeft="10dp"/>
+               <TextView
+                  android:id="@+id/hotel_intro"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/hotel_nearby"
+                   android:textStyle="italic"
+                   android:textSize="15sp"
+                   android:textColor="@color/colorBlack"
+                   android:layout_toRightOf="@id/hotel_logo"/>
+
+               <TextView
+                   android:id="@+id/hotel_detail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="99dp"
+                   android:layout_below="@id/hotel_intro"
+                   android:layout_toRightOf="@id/hotel_logo"
+                   android:text="@string/hotel_punjab"
+                   android:textSize="15sp"
+                   android:textStyle="bold" />
+           </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/howtoreach_tab"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_new"
+        android:layout_height="120dp"
+        android:layout_below="@id/info_tab">
+
+        <ImageView
+            android:id="@+id/howtoreach_logo"
+            android:layout_width="89dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/train" />
+        <TextView
+            android:id="@+id/transport_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_reach"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/howtoreach_logo"/>
+
+        <TextView
+            android:id="@+id/transport_details"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transport_intro"
+            android:layout_toRightOf="@id/howtoreach_logo"
+            android:text="@string/transport_karputhala"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+       android:id="@+id/info_tab"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_new"
+        android:layout_height="120dp"
+        android:layout_below="@id/centername">
+
+        <ImageView
+            android:id="@+id/info_logo"
+            android:layout_width="93dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/info" />
+        <TextView
+            android:id="@+id/info_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_about_ssb_center"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/info_logo"/>
+
+        <TextView
+            android:id="@+id/info_details"
+            android:layout_width="315dp"
+            android:layout_height="92dp"
+            android:layout_below="@id/info_intro"
+            android:layout_toRightOf="@id/info_logo"
+            android:text="@string/info_scn"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/places_tab"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/hotel_tab"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layout_new">
+
+        <ImageView
+            android:id="@+id/places_logo"
+            android:layout_width="87dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/places_to_visit" />
+
+        <TextView
+            android:id="@+id/places_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/places_logo"
+            android:text="@string/places_to_visit"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/places_details"
+            android:layout_width="322dp"
+            android:layout_height="95dp"
+            android:layout_below="@id/places_intro"
+            android:layout_toRightOf="@id/places_logo"
+            android:text="@string/punjab_places"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+           </RelativeLayout>

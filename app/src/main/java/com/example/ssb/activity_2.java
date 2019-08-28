@@ -9,15 +9,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
 public class activity_2 extends Activity {
-CardView cview1,cview2,cview3,cview4;
+LinearLayout layout1,layout2,layout3,layout4;
 TextView view1,view2,view3,view4;
-ImageView logo;
+ImageView logo,Image1,Image2,Image3,Image4;
 
 
     @Override
@@ -25,16 +26,24 @@ ImageView logo;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        logo = (ImageView) findViewById(R.id.logo_info);
-        cview1 = (CardView) findViewById(R.id.cardview1);
-        cview2 =(CardView) findViewById(R.id.cardview2);
-        cview3 = (CardView) findViewById(R.id.cardview3);
-        cview4 =  (CardView) findViewById(R.id.cardview4);
+        //layout's
+        layout1 = (LinearLayout) findViewById(R.id.linearlayout_1);
+        layout2 = (LinearLayout) findViewById(R.id.linearlayout_2);
+        layout3 = (LinearLayout) findViewById(R.id.linearlayout_3);
+        layout4 = (LinearLayout) findViewById(R.id.linearlayout_4);
 
+        logo = (ImageView) findViewById(R.id.logo_info);
         view1 = (TextView) findViewById(R.id.text_1);
         view2 = (TextView) findViewById(R.id.schedule);
-        view3 = (TextView) findViewById(R.id.infoaboutcenters);
+       view3 = (TextView) findViewById(R.id.infoaboutcenter);
         view4 = (TextView) findViewById(R.id.contact);
+
+       logo.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Toast.makeText(activity_2.this,"DEVELOPED BY MISHRA",Toast.LENGTH_LONG).show();
+           }
+       });
 
         view1.setOnClickListener(new View.OnClickListener() {
             @Override
