@@ -59,7 +59,7 @@ ImageView logo,Image1,Image2,Image3,Image4;
             }
         });
 
-        view3.setOnClickListener(new View.OnClickListener() {
+        layout3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(activity_2.this,"Opening Info About Centers",Toast.LENGTH_LONG).show();
@@ -68,13 +68,13 @@ ImageView logo,Image1,Image2,Image3,Image4;
             }
         });
 
-    view4.setOnClickListener(new View.OnClickListener() {
+/*    view4.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Toast.makeText(activity_2.this,"Opening Contact us",Toast.LENGTH_LONG).show();
         }
     });
-
+*/
     }
 
     }
