@@ -6,13 +6,13 @@
     <string name="hotel_nearby">Hotels Nearby</string>
     <string name="hotel_punjab">There are no hotels in kapurthala in the vicinty of the SSB Board, The nearest accommodation available is
     a gurudwara that\'s at walking distance from the bus stand\nThe Name Of The Gurudwara Is State Gurudwara</string>
-   <string name="info_about_ssb_center">Info About Center</string>
-    <string name="info_scn">Selection Centre North was raised on 01 Jul 2015 in its interim location at Kapurthala, \n
-                             It has two Services Selection Boards namely 31 SSB and 32 SSB. \n The motto of the centre is "NISHPAKSH, NIHSWARTH, NISSANDEH” </string>
+    <string name="info_about_ssb_center">Info About Center</string>
+    <string name="info_scn">Selection Centre North was raised on 01 \n Jul 2015 in its interim location at Kapurthala, \n
+                             It has two Services Selection Boards \n namely 31 SSB and 32 SSB. \n The motto of the centre is "NISHPAKSH, NIHSWARTH, NISSANDEH” </string>
     <string name="places_to_visit">Places To Visit <Nearby></Nearby></string>
-   <string name="punjab_places"> 1.Moorish Mosque, Kapurthala \n2.Pushpa Gujral Science City \n3.Shalimar Gardens\n4.Panch Mandir\n5.The city of Jalandhar Is Also A Great Place To Visit </string>
+    <string name="punjab_places"> 1.Moorish Mosque, Kapurthala \n2.Pushpa Gujral Science City \n3.Shalimar Gardens\n4.Panch Mandir\n5.The city of Jalandhar Is Also A Great \n Place To Visit </string>
     <string name="how_to_reach">How To Reach The Center</string>
-    <string name="transport_karputhala">1.Buses-buses ply in to kaputhala from nearby major cities \n2.Trains- The city is well connected by Trains \n3.Flights-The nearest Airport is Sri Guru Ram \nDass Jee International Airport in Amritsar</string>
+    <string name="transport_karputhala">1.Buses-buses ply in to kaputhala from nearby major cities \n2.Trains- The city is well connected by \nTrains \n3.Flights-The nearest Airport is Sri \nGuru Ram Dass Jee International Airport in Amritsar</string>
     <string-array name="centers_array">
         <item>Select The SSB Center You Want The Info About</item>
         <item>SCN KAPURTHALA,PUNJAB</item>

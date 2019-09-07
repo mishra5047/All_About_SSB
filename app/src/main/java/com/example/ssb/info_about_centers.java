@@ -68,7 +68,7 @@ Toast.makeText(getApplicationContext(),"Please Install Email Clients",Toast.LENG
         Toast.makeText(adapterView.getContext(), text, Toast.LENGTH_LONG).show();
 
       if (text.equals("SCN KAPURTHALA,PUNJAB")){
-          Intent intent= new Intent(info_about_centers.this,SCN_KAPURTHALA.class);
+          Intent intent= new Intent(info_about_centers.this,Slide.class);
           startActivity(intent);
       }
     }

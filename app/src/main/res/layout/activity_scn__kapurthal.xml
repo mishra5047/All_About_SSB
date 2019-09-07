@@ -7,7 +7,7 @@
 
     tools:context=".SCN_KAPURTHALA">
 
-   <ImageView
+    <ImageView
        android:layout_width="140dp"
        android:id="@+id/logo"
        android:layout_height="140dp"
@@ -103,7 +103,7 @@
             android:layout_below="@id/transport_intro"
             android:layout_toRightOf="@id/howtoreach_logo"
             android:text="@string/transport_karputhala"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
        </androidx.core.widget.NestedScrollView>
 
@@ -145,7 +145,7 @@
             android:layout_below="@id/info_intro"
             android:layout_toRightOf="@id/info_logo"
             android:text="@string/info_scn"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 </androidx.core.widget.NestedScrollView>
     </RelativeLayout>
