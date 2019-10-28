@@ -2,6 +2,23 @@
     <string name="app_name">SSB</string>
     <string name="title_activity_whats_ssb">whats_ssb</string>
     <string name="center">Select A SSB Center</string>
+    <!--
+    Center's name
+    !-->
+    <string name="name_kapurthala">S.C.NORTH \n Punjab</string>
+    <string name="name_allahabad">S.C.EAST, Allahabad  </string>
+    <string name="bhopal_name">S.C.CENTRAL \n Bhopal</string>
+    <string name="bangalore_name">S.C.SOUTH   \n Bangalore</string>
+    <string name="dehradun_name">AFSB \n Dehradun</string>
+    <string name="mysore_name">AFSB \n Mysore</string>
+    <string name="gandhi_nagar_name"> AFSB \n Gandhi Nagar</string>
+    <string name="varanasi_name">AFSB \n Varanasi</string>
+    <string name="coimbatore_name">NSB \n Coimbatore</string>
+    <string name="army_center">ARMY</string>
+    <string name="navy_center">NAVY</string>
+    <string name="airforce_center">AIR FORCE</string>
+
+    <!-- kaputrthala !-->
     <string name="kapurthala">SCN KAPURTHALA,PUNJAB</string>
     <string name="hotel_nearby">Hotels Nearby</string>
     <string name="hotel_punjab">There are no hotels in kapurthala in the vicinty of the SSB Board, The nearest accommodation available is
@@ -10,12 +27,40 @@
     <string name="info_scn">Selection Centre North was raised on 01 \n Jul 2015 in its interim location at Kapurthala, \n
                              It has two Services Selection Boards \n namely 31 SSB and 32 SSB. \n The motto of the centre is "NISHPAKSH, NIHSWARTH, NISSANDEH” </string>
     <string name="places_to_visit">Places To Visit <Nearby></Nearby></string>
-    <string name="punjab_places"> 1.Moorish Mosque, Kapurthala \n2.Pushpa Gujral Science City \n3.Shalimar Gardens\n4.Panch Mandir\n5.The city of Jalandhar Is Also A Great \n Place To Visit </string>
+    <string name="places_punjab"> 1.Moorish Mosque, Kapurthala \n 2.Pushpa Gujral Science City \n3.Shalimar Gardens\n4.Panch Mandir\n5.The city of Jalandhar Is Also A Great \n Place To Visit </string>
     <string name="how_to_reach">How To Reach The Center</string>
     <string name="transport_karputhala">1.Buses-buses ply in to kaputhala from nearby major cities \n2.Trains- The city is well connected by \nTrains \n3.Flights-The nearest Airport is Sri \nGuru Ram Dass Jee International Airport in Amritsar</string>
-    <string-array name="centers_array">
-        <item>Select The SSB Center You Want The Info About</item>
-        <item>SCN KAPURTHALA,PUNJAB</item>
-        <item>NSB COIAMBATORE</item>
-    </string-array>
+
+    <!-- Allahad SSB !-->
+<string name="hotels_allahabad">   1.Hotel Kanha Shyam \n 2.Hotel UR, Stanley Rd \n 3.Arjun Hotel, Allahabad Junction \n 4.Hotel Vineet, Johnstonganj \n
+    5.Hotel Vilas, Circuit House</string>
+    <string name="contact_allahabad">Address: Cariappa Rd, Canton, Civil Lines, Prayagraj, Uttar Pradesh 211001 \n
+        Phone Number: 0532-2422680, 0532-2422688, 0532-2296987 \n Fax – 0532-2424815 \n
+        E-mail: sce-ald-army@nic.in</string>
+   <string name="places_allahabad">1.Prayagraj Fort \n 2.All Saints Cathedral \n 3.Khusro Bagh Allahabad Prayagraj \n 4.St. Patrick Catholic Church</string>
+    <string name="info_allahabad">SCE has got five boards of Indian Army, which are 11 SSB,14 SSB,18 SSB,19 SSB and 34 SSB. SCE has got a good atmosphere with all modern facilities like \nSTD, Mess, Olive Green Restaurant, outdoor and indoor games, medical facilities, good dormitories, facilities of waterman etc. There is ATM in the vicinity as well.\nCandidates who have applied for CDSE, NDA, 10+2 Teach Entry of Army, SSC-Tech and TGC etc. can get this selection center.</string>
+    <string name="transport_allahabad">In order to report for the SSB,\n one has to report at the railway station itself in front of MCO</string>
+    <string name="contact_name">Contact Details</string>
+
+    <!-- Bhopal SSB !-->
+    <string name="info_bhopal">Selection Centre Bhopal was established in October 1975 and it is located in the area of Sultania Infantry Lines, Bhopal Military Station.\n It has three Services Selection Boards namely 20 SSB, 21 SSB and 22SSB.</string>
+    <string name="transport_bhopal">Distance from the nearest railway station-\n The centrer is approximately 4.8 kms from Bhopal Junction railway station</string>
+    <string name="place_bhopal">1.Upper Lake: The largest artificial lake in Asia. \n The Boat Club is also located there and national level water sporting events are organized by the club.
+    \n 2.Van Vihar National Park: A zoological park with the status of a national park, it is situated south of the Upper Lake. \n 3.Takri: A hindu and jain temple, situated on a hill cliff, \n this place is popular for the scenic views it offers of the city below.</string>
+    <string name="hotels_bhopal">1. Hotel Naina Palace \n 2.Hotel Prakash INN \n 3. Hotel PR Plaza \n 4.Hotel Prime \n 5.Hotel Panchwati</string>
+    <string name="contact_bhopal">Address: Jaipur-Guna Road Chandukheri, Bhopal, Madhya Pradesh 462001\n Phone Number: 0755–2731245, 0755–2731255, 0755–2702223 \nFax – 0755–2735980 \nEmail: selectioncentrebhopal@gmail.com</string>
+
+<!-- Bangalore SSB !-->
+    <string name="info_bangalore">This is a centre for both Army and Navy officer Selection. It has got two boards for Army, 17 SSB and 24 SSB and one board for Navy that is 12 SSB. SCS is equipped with good facilities to make a comfortable and memorable stay for the candidates. It has got Indoor and out games, excellent dormitories, mess, canteen, CSD facility, Telephone, Internet, Reading, TV etc.</string>
+    <string name="transport_bangalore">There are numerous trains connecting Bangalore with the rest of India. There is train service available from the Bangalore station to other parts of India. By road Bangalore is connected to Pune, Mysore etc. The Bus stand is called Majestic.
+There are flights connecting Bangalore to other parts of Indian as well. The Bengaluru International Airport is the Airport for Bangalore.</string>
+    <string name="hotels_bangalore">Since the reporting point for the candidates is the Railway station hence it is advised to them to stay near the railway station.\n
+    1.Hotel Shangrila \n 2.Hotel Select \n 3.Star Deluxe Lounge</string>
+    <string name="places_bangalore">1.Jawaharlal Nehru Planetarium \n 2.Visvesvaraya Museum \n 3.Cubbon Park</string>
+    <string name="contact_bangalore">Address-Cubbon Road, Bangalore – 560042
+Fax – 080-25587883/25594954
+Phone – 080-25591075 Extn 6804, 9916322971/9480948061
+E-Mail – bloressb@rediffmail.com
+Reporting Point – Bangalore City Railway Station.</string>
+
 </resources>

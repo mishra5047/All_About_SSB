@@ -1,4 +1,4 @@
-package com.example.ssb;
+package com.example.ssb.Kapurthala;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.ssb.R;
 
 import org.w3c.dom.Text;
 

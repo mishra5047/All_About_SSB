@@ -1,19 +1,13 @@
 package com.example.ssb;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class activity_2 extends Activity {
 LinearLayout layout1,layout2,layout3,layout4;
@@ -63,7 +57,7 @@ ImageView logo,Image1,Image2,Image3,Image4;
             @Override
             public void onClick(View view) {
                 Toast.makeText(activity_2.this,"Opening Info About Centers",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(activity_2.this, info_about_centers.class);
+                Intent intent = new Intent(activity_2.this, Info_about_centers.class);
                 startActivity(intent);
             }
         });

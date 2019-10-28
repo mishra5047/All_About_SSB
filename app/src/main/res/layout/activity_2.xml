@@ -3,18 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient"
     android:layout_height="match_parent"
     android:paddingLeft="10dp"
     android:orientation="vertical"
     tools:context=".activity_2">
 
-    <ImageView
+    <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/logo_info"
+        android:layout_marginTop="40dp"
         android:layout_width="200dp"
+        app:civ_border="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"
         android:layout_gravity="center"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/logo" />
+        android:src="@drawable/logo_defence" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +29,6 @@
         android:orientation="vertical">
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -40,21 +44,20 @@
     android:layout_height="match_parent">
 <ImageView
     android:id="@+id/imageview_1"
-    android:layout_width="140dp"
-    android:src="@drawable/logo"
+    android:layout_width="130dp"
+    android:src="@drawable/question_dialouge"
     android:layout_marginTop="20dp"
-    android:layout_height="150dp" />
+    android:layout_height="130dp" />
             <TextView
                 android:id="@+id/text_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:padding="10dp"
                 android:text="What's SSB?"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 </LinearLayout>
 
@@ -68,24 +71,21 @@
                 android:background="@drawable/layout_new"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:id="@+id/imageview_2"
-                    android:src="@drawable/logo"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="150dp" />
+                    android:src="@drawable/calender"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="130dp" />
 
             <TextView
                 android:id="@+id/schedule"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="The 5 Day Schedule Of SSB"
+                android:text="The Schedule Of SSB"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
         </LinearLayout>
@@ -105,22 +105,22 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp">
                 <ImageView
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:id="@+id/imageview_3"
-                    android:src="@drawable/logo"
+                    android:src="@drawable/center_logo"
                     android:layout_marginTop="20dp"
-                    android:layout_height="150dp" />
+                    android:layout_height="130dp" />
             <TextView
                 android:id="@+id/infoaboutcenter"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Info About SSB Centers"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
             </LinearLayout>
 
@@ -134,11 +134,11 @@
                 android:background="@drawable/layout_new"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="140dp"
+                    android:layout_width="130dp"
                     android:id="@+id/imageview_4"
-                    android:src="@drawable/logo"
+                    android:src="@drawable/contact_logo"
                     android:layout_marginTop="20dp"
-                    android:layout_height="150dp" />
+                    android:layout_height="130dp" />
             <TextView
                 android:id="@+id/contactus"
                 android:layout_width="wrap_content"
@@ -146,11 +146,10 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:padding="10dp"
                 android:text="Contact us"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
 

@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Slide" />
-        <activity android:name=".SCN_KAPURTHALA" />
-        <activity android:name=".info_about_centers" />
+        <activity android:name=".Allahabad.Allahabad_Slide"></activity>
+        <activity android:name=".Kapurthala.Slide" />
+        <activity android:name=".Kapurthala.SCN_KAPURTHALA" />
+        <activity android:name=".Info_about_centers" />
         <activity android:name=".Contact_us" />
         <activity android:name=".activity_2" />
+        <activity android:name=".Bhopal_Slide"/>
+        <activity android:name=".Bangalore_Slide"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

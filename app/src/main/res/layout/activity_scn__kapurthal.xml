@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".SCN_KAPURTHALA">
+    tools:context=".Kapurthala.SCN_KAPURTHALA">
 
     <ImageView
        android:layout_width="140dp"
-       android:id="@+id/logo"
+        android:id="@+id/logo"
        android:layout_height="140dp"
        android:src="@drawable/logo"
        android:layout_centerHorizontal="true"
@@ -185,7 +185,6 @@
             android:layout_height="95dp"
             android:layout_below="@id/places_intro"
             android:layout_toRightOf="@id/places_logo"
-            android:text="@string/punjab_places"
             android:textSize="15sp"
             android:textStyle="bold" />
         </androidx.core.widget.NestedScrollView>
