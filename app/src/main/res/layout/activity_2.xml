@@ -3,29 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradient_1"
     android:layout_height="match_parent"
     android:paddingLeft="10dp"
     android:orientation="vertical"
-    tools:context=".activity_2">
+    tools:context=".Activity_2">
 
-    <com.mikhaellopez.circularimageview.CircularImageView
+    <ImageView
         android:id="@+id/logo_info"
-        android:layout_marginTop="40dp"
-        android:layout_width="200dp"
-        app:civ_border="true"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#000"
-        android:layout_gravity="center"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="160dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_defence" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_new"
+      />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -33,61 +33,66 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-<LinearLayout
-    android:layout_width="0dp"
-    android:layout_weight="1"
-    android:layout_margin="10dp"
-    android:id="@+id/linearlayout_1"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:background="@drawable/layout_new"
-    android:layout_height="match_parent">
-<ImageView
-    android:id="@+id/imageview_1"
-    android:layout_width="130dp"
-    android:src="@drawable/question_dialouge"
-    android:layout_marginTop="20dp"
-    android:layout_height="130dp" />
-            <TextView
-                android:id="@+id/text_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:text="What's SSB?"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-</LinearLayout>
-
             <LinearLayout
-                android:id="@+id/linearlayout_2"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
+                android:id="@+id/linearlayout_1_large"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:background="@drawable/layout_new"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="130dp"
+                    android:id="@+id/imageview_1"
+                    android:layout_width="100dp"
+                    android:src="@drawable/question_dialouge"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:id="@+id/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="What's SSB?"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_2_large"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/layout_new"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="100dp"
                     android:id="@+id/imageview_2"
                     android:src="@drawable/calender"
-                    android:layout_marginTop="2dp"
-                    android:layout_height="130dp" />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="100dp" />
 
-            <TextView
-                android:id="@+id/schedule"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="The Schedule Of SSB"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+
+                <TextView
+                    android:id="@+id/schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="The Schedule"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,63 +101,91 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/linearlayout_3"
+                android:id="@+id/linearlayout_3_large"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:background="@drawable/layout_new"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp">
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     android:id="@+id/imageview_3"
                     android:src="@drawable/center_logo"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="130dp" />
-            <TextView
-                android:id="@+id/infoaboutcenter"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Info About SSB Centers"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                    android:layout_marginTop="25dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:id="@+id/infoaboutcenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Info About SSB Centers"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/linearlayout_4"
+                android:id="@+id/linearlayout_4_large"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:background="@drawable/layout_new"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="130dp"
+                    android:layout_width="100dp"
                     android:id="@+id/imageview_4"
                     android:src="@drawable/contact_logo"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="130dp" />
-            <TextView
-                android:id="@+id/contactus"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Contact us"
-                android:textAlignment="center"
-                android:textColor="@color/colorBlack"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:id="@+id/contactus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Contact us"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
         </LinearLayout>
 
+
     </LinearLayout>
-</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9684827030039892/5788917454"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp">
+
+    </com.google.android.gms.ads.AdView>
+
+
 </LinearLayout>

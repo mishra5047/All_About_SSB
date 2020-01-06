@@ -4,20 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/colorBlack"
     tools:context=".MainActivity">
 
-    <com.mikhaellopez.circularimageview.CircularImageView
-    android:layout_width="200dp"
-    android:layout_height="200dp"
+    <ImageView
+    android:layout_width="350dp"
+    android:layout_height="350dp"
     android:id="@+id/logo_edited"
-        app:civ_border_color="#000"
-        android:layout_centerInParent="true"
-        android:src="@drawable/logo_defence"
-        app:civ_border_width="4dp"
-        app:civ_shadow="true"
-        app:civ_shadow_radius="10"
-        app:civ_shadow_color="#000"
+        android:scaleType="centerInside"
+        android:foregroundGravity="center"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo_front"
+
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_edited"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="All ABOUT SSB"
+        android:textSize="30sp"
+        android:fontFamily="@font/arvo_regular"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/name"
+        android:textStyle=""
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If You Can Dream It, You Can Do It"
+        android:textSize="25sp"
+        android:layout_below="@id/name"
+      android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/regular_girasol"/>
     </RelativeLayout>

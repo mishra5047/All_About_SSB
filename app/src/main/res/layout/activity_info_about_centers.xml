@@ -9,19 +9,19 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <com.mikhaellopez.circularimageview.CircularImageView
+    <ImageView
         android:id="@+id/logo_new"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
-        app:civ_border_color="#fff"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitCenter"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo_defence"
-        app:civ_border_width="2dp"
-        android:layout_marginEnd="30dp"
+        android:src="@drawable/rsz_logo"
+
+        android:layout_marginEnd="0dp"
         android:layout_marginBottom="30dp" />
     <TextView
         android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
         android:layout_marginTop="250dp"
         android:textColor="#2E7D32"
         android:text="Swipe For List Of ARMY SSB Centers ->"
-        android:textStyle="normal"
+        android:textStyle="bold"
         android:textSize="15sp"
         />
     <HorizontalScrollView
@@ -61,7 +61,7 @@
                     android:id="@+id/punjab_logo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/golden_temple" />
+                    android:src="@drawable/golden" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -93,7 +93,7 @@
                     android:id="@+id/allahabad_logo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/allahabd_logo" />
+                    android:src="@drawable/fortification" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -126,7 +126,7 @@
                     android:id="@+id/Bhopal_logo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/bhopal_logo" />
+                    android:src="@drawable/mosque_new" />
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -190,7 +190,7 @@
         android:fontFamily="@font/oswald"
         android:textColor="#00B0FF"
         android:text="Swipe For List Of AIR FORCE SSB Centers ->"
-        android:textStyle="italic"
+        android:textStyle="bold"
         android:textSize="15sp"
         />
 
@@ -216,8 +216,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/mysore"
-            android:src="@drawable/dehradun_icon"/>
+            android:id="@+id/dehradun"
+            android:src="@drawable/ashok"/>
     </androidx.cardview.widget.CardView>
     <TextView
         android:layout_width="wrap_content"
@@ -247,8 +247,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/dehradun"
-                    android:src="@drawable/mysore_icon"/>
+                    android:id="@+id/mysore"
+                    android:src="@drawable/hawa_mahal"/>
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -280,7 +280,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/gandhi_nagar"
-                    android:src="@drawable/ahemdabad_logo"/>
+                    android:src="@drawable/fighter"/>
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -312,7 +312,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/vanarasi"
-                    android:src="@drawable/vanarsi"/>
+                    android:src="@drawable/om"/>
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -343,7 +343,7 @@
         android:fontFamily="@font/oswald"
         android:textColor="#000"
         android:text="Swipe For List Of NAVY SSB Center's ->"
-        android:textStyle="italic"
+        android:textStyle="bold"
         android:textSize="15sp"
         />
     <HorizontalScrollView
@@ -351,6 +351,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/view_3"
         android:background="@drawable/rounded_border_navy"
+        android:layout_marginBottom="25dp"
         android:layout_below="@id/navy_list">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -369,7 +370,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/coimbatore"
-                    android:src="@drawable/coiambatore_icon"/>
+                    android:src="@drawable/museum"/>
             </androidx.cardview.widget.CardView>
             <TextView
                 android:layout_width="wrap_content"
@@ -433,7 +434,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/Bhopal_navy"
-                    android:src="@drawable/bhopal_logo"/>
+                    android:src="@drawable/mosque_new"/>
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -462,10 +463,12 @@
                 app:cardBackgroundColor="#fff">
 
                 <ImageView
+                    android:id="@+id/vishakapatnam"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/vishakapatnam"
-                    android:src="@drawable/vizag"/>
+                    android:layout_alignStart="@+id/layout_12"
+                    android:layout_alignTop="@+id/layout_12"
+                    android:src="@drawable/anchor" />
             </androidx.cardview.widget.CardView>
 
             <TextView
