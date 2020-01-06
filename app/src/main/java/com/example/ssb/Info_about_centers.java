@@ -157,6 +157,13 @@ ImageView punjab_image;
             }
         });
 
+        logo_vishakhapatnam = (ImageView) findViewById(R.id.vishakapatnam);
+        logo_vishakhapatnam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Info_about_centers.this,"Under Development",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
