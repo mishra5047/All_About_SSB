@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/arvo_regular"
-        android:text="All ABOUT SSB "
+        android:text="All ABOUT SSB \n normal "
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle=""

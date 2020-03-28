@@ -37,7 +37,7 @@ public class Activity_2 extends Activity {
 
         if (size.equalsIgnoreCase("Small"))
             setContentView(R.layout.activity_2_small);
-        else
+        else if (size.equalsIgnoreCase("normal"))
             setContentView(R.layout.activity_2);
 
 
@@ -118,7 +118,7 @@ public class Activity_2 extends Activity {
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
-        String screenSize;
+        String screenSize = null;
         int width = dm.widthPixels;
         int height = dm.heightPixels;
         int dens = dm.densityDpi;
@@ -128,9 +128,9 @@ public class Activity_2 extends Activity {
         double y = Math.pow(hi, 2);
         double screenInches = Math.sqrt(x+y);
 
-        if (screenInches < 5.5)
+        if (screenInches <= 5.2)
             screenSize = "small";
-        else
+        else if (screenInches > 5.2 && screenInches < 6.5)
             screenSize = "normal";
 
         return screenSize;

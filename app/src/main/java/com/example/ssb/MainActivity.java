@@ -28,8 +28,8 @@ String size;
 
     if (size.equalsIgnoreCase("Small"))
         setContentView(R.layout.activity_main_small);
-        else
-            setContentView(R.layout.activity_main);
+    else if (size.equalsIgnoreCase("normal"))
+        setContentView(R.layout.activity_main);
 
 
         circularImageView = findViewById(R.id.logo_edited);
@@ -52,7 +52,7 @@ String size;
     DisplayMetrics dm = new DisplayMetrics();
     getWindowManager().getDefaultDisplay().getMetrics(dm);
 
-    String screenSize;
+    String screenSize = null;
     int width = dm.widthPixels;
     int height = dm.heightPixels;
     int dens = dm.densityDpi;
@@ -62,9 +62,9 @@ String size;
     double y = Math.pow(hi, 2);
     double screenInches = Math.sqrt(x+y);
 
-    if (screenInches < 5.5)
+    if (screenInches <= 5.2)
         screenSize = "small";
-    else
+    else if (screenInches > 5.2 && screenInches < 6.5)
         screenSize = "normal";
 
     return screenSize;
