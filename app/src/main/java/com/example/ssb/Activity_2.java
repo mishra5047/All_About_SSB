@@ -28,11 +28,18 @@ public class Activity_2 extends Activity {
  TextView view1,view2,view3,view4;
  ImageView logo,Image1,Image2,Image3,Image4;
  AdView m_adview;
-
+ String size;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+
+        size = checkScreen();
+
+        if (size.equalsIgnoreCase("Small"))
+            setContentView(R.layout.activity_2_small);
+        else
+            setContentView(R.layout.activity_2);
+
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
            @Override
@@ -105,4 +112,30 @@ public class Activity_2 extends Activity {
         super.onBackPressed();
         Animatoo.animateSlideLeft(Activity_2.this);
     }
+
+    public String checkScreen(){
+
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+        String screenSize;
+        int width = dm.widthPixels;
+        int height = dm.heightPixels;
+        int dens = dm.densityDpi;
+        double wi = (double)width / (double)dens;
+        double hi = (double)height / (double)dens;
+        double x = Math.pow(wi, 2);
+        double y = Math.pow(hi, 2);
+        double screenInches = Math.sqrt(x+y);
+
+        if (screenInches < 5.5)
+            screenSize = "small";
+        else
+            screenSize = "normal";
+
+        return screenSize;
+    }
+
+
+
 }
