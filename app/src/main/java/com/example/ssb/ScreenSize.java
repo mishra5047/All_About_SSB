@@ -7,12 +7,12 @@ import android.view.View;
 
 import androidx.fragment.app.Fragment;
 
-public class ScreenSize extends Activity {
+class ScreenSize {
 
 
-   /* public String screenCheck(View view){
+    public String screenCheck(Activity activity){
     DisplayMetrics dm = new DisplayMetrics();
-        view.getWindowManager().getDefaultDisplay().getMetrics(dm);
+        activity.getWindowManager().getDefaultDisplay().getMetrics(dm);
     int width = dm.widthPixels;
     int height = dm.heightPixels;
     int dens = dm.densityDpi;
@@ -24,13 +24,13 @@ public class ScreenSize extends Activity {
 
     String size;
 
-        if (screenInches < 5.4)
+        if (screenInches < 5.2)
         size = "Small";
         else
             size = "Large";
 
         return size;
     }
-*/
+
 }
 

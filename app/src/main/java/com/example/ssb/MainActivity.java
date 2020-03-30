@@ -17,35 +17,38 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class MainActivity extends Activity {
-ImageView circularImageView;
-Context context;
-String size;
-@Override
+    ImageView circularImageView;
+    String size;
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        size = checkScreen();
+//        ScreenSize size_check = new ScreenSize();
+//        size = size_check.screenCheck(MainActivity.this);
 
-    if (size.equalsIgnoreCase("Small"))
-        setContentView(R.layout.activity_main_small);
-    else if (size.equalsIgnoreCase("normal"))
-        setContentView(R.layout.activity_main);
+       this.size = checkScreen();
 
+        if (size.equalsIgnoreCase("Small"))
+            setContentView(R.layout.activity_main_small);
+        else if (size.equalsIgnoreCase("normal"))
+            setContentView(R.layout.activity_main);
 
         circularImageView = findViewById(R.id.logo_edited);
 
-       new Handler().postDelayed(new Runnable() {
-       @Override
-       public void run() {
-        Intent intent = new Intent(MainActivity.this, Activity_2.class);
-        startActivity(intent);
-        Animatoo.animateSlideUp(MainActivity.this);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, Activity_2.class);
+                startActivity(intent);
+                Animatoo.animateSlideUp(MainActivity.this);
 
-       }
-   },2500);
+            }
+        }, 2500);
 
 
-}
+    }
 
     public String checkScreen(){
 
