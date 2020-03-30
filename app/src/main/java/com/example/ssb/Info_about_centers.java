@@ -37,11 +37,14 @@ public class Info_about_centers extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.size = checkScreen();
+
+        ScreenSize size_check = new ScreenSize();
+        size = size_check.screenCheck(Info_about_centers.this);
+
 
         if (size.equalsIgnoreCase("Small"))
             setContentView(R.layout.activity_info_about_centers_small);
-        else if (size.equalsIgnoreCase("normal"))
+        else
             setContentView(R.layout.activity_info_about_centers);
 
         //logo
@@ -180,29 +183,6 @@ public class Info_about_centers extends Activity {
     public void onBackPressed() {
         super.onBackPressed();
         Animatoo.animateZoom(Info_about_centers.this);
-    }
-
-    public String checkScreen(){
-
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-
-        String screenSize = null;
-        int width = dm.widthPixels;
-        int height = dm.heightPixels;
-        int dens = dm.densityDpi;
-        double wi = (double)width / (double)dens;
-        double hi = (double)height / (double)dens;
-        double x = Math.pow(wi, 2);
-        double y = Math.pow(hi, 2);
-        double screenInches = Math.sqrt(x+y);
-
-        if (screenInches <= 5.2)
-            screenSize = "small";
-        else if (screenInches > 5.2 && screenInches < 6.5)
-            screenSize = "normal";
-
-        return screenSize;
     }
 
 }

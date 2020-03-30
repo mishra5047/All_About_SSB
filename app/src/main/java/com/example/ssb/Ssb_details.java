@@ -43,6 +43,7 @@ public class Ssb_details extends Activity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent_back = new Intent(Ssb_details.this, Activity_2.class);
                 startActivity(intent_back);
                 Animatoo.animateSwipeRight(Ssb_details.this);
@@ -166,9 +167,11 @@ public class Ssb_details extends Activity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        Intent intent_back = new Intent(Ssb_details.this, Activity_2.class);
+        startActivity(intent_back);
+        Animatoo.animateSwipeRight(Ssb_details.this);
         textToSpeech.stop();
-        Animatoo.animateSlideRight(Ssb_details.this);
+
     }
 
     @Override

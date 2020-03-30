@@ -41,7 +41,9 @@ TextToSpeech textToSpeech;
         public void onClick(View v) {
         Intent intent_back = new Intent(Olq.this, Olq_first_screen.class);
         startActivity(intent_back);
-        textToSpeech.stop();    }
+        textToSpeech.stop();
+        Animatoo.animateSwipeRight(Olq.this);
+        }
         });
 
        // list of olq and their desription
@@ -293,7 +295,8 @@ models = new ArrayList<>();
     // func. to detect pressing of back button
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        Intent intent_back = new Intent(Olq.this, Olq_first_screen.class);
+        startActivity(intent_back);
         textToSpeech.stop();
         Animatoo.animateSwipeRight(Olq.this);
     }

@@ -25,15 +25,16 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        ScreenSize size_check = new ScreenSize();
-//        size = size_check.screenCheck(MainActivity.this);
+        ScreenSize size_check = new ScreenSize();
+        size = size_check.screenCheck(MainActivity.this);
 
-       this.size = checkScreen();
+//        this.size = checkScreen();
 
         if (size.equalsIgnoreCase("Small"))
             setContentView(R.layout.activity_main_small);
-        else if (size.equalsIgnoreCase("normal"))
+        else
             setContentView(R.layout.activity_main);
+
 
         circularImageView = findViewById(R.id.logo_edited);
 
@@ -45,30 +46,31 @@ public class MainActivity extends Activity {
                 Animatoo.animateSlideUp(MainActivity.this);
 
             }
-        }, 2500);
+        }, 1000);
 
 
     }
+}
 
-    public String checkScreen(){
-
-    DisplayMetrics dm = new DisplayMetrics();
-    getWindowManager().getDefaultDisplay().getMetrics(dm);
-
-    String screenSize = null;
-    int width = dm.widthPixels;
-    int height = dm.heightPixels;
-    int dens = dm.densityDpi;
-    double wi = (double)width / (double)dens;
-    double hi = (double)height / (double)dens;
-    double x = Math.pow(wi, 2);
-    double y = Math.pow(hi, 2);
-    double screenInches = Math.sqrt(x+y);
-
-    if (screenInches <= 5.2)
-        screenSize = "small";
-    else if (screenInches > 5.2 && screenInches < 6.5)
-        screenSize = "normal";
-
-    return screenSize;
-}}
+//    public String checkScreen(){
+//
+//    DisplayMetrics dm = new DisplayMetrics();
+//    getWindowManager().getDefaultDisplay().getMetrics(dm);
+//
+//    String screenSize = null;
+//    int width = dm.widthPixels;
+//    int height = dm.heightPixels;
+//    int dens = dm.densityDpi;
+//    double wi = (double)width / (double)dens;
+//    double hi = (double)height / (double)dens;
+//    double x = Math.pow(wi, 2);
+//    double y = Math.pow(hi, 2);
+//    double screenInches = Math.sqrt(x+y);
+//
+//    if (screenInches <= 5.2)
+//        screenSize = "small";
+//    else if (screenInches > 5.2 && screenInches < 6.5)
+//        screenSize = "normal";
+//
+//    return screenSize;
+//}}
