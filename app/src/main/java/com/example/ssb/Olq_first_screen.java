@@ -29,6 +29,8 @@ TextView textView;
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(Olq_first_screen.this, Activity_2.class);
+        startActivity(intent);
         Animatoo.animateDiagonal(Olq_first_screen.this);
     }
 }

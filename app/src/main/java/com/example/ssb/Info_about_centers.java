@@ -181,8 +181,9 @@ public class Info_about_centers extends Activity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        Animatoo.animateZoom(Info_about_centers.this);
+        Intent intent = new Intent(Info_about_centers.this, Activity_2.class);
+        startActivity(intent);
+        Animatoo.animateCard(Info_about_centers.this);
     }
 
 }

@@ -110,27 +110,6 @@ models = new ArrayList<>();
         models.add(new Model(R.drawable.stamina,ol_15,desc_15));
 
 
-
-
-        Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4),
-                getResources().getColor(R.color.color5),
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4),
-                getResources().getColor(R.color.color5),
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4),
-                getResources().getColor(R.color.color5),
-        };
-
-        colors = colors_temp;
         adapter = new Adapter(models,this);
         viewPager = findViewById(R.id.viewPager_3);
         viewPager.setAdapter(adapter);
@@ -138,13 +117,6 @@ models = new ArrayList<>();
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (position < (adapter.getCount() - 1) && position < (colors.length - 1))
-                {
-                    viewPager.setBackgroundColor((Integer) argbEvaluator.evaluate(positionOffset,colors[position],colors[position + 1]));
-                }else
-                {
-                    viewPager.setBackgroundColor(colors[colors.length - 1]);
-                }
                 if (position == 0)
                 {
                     btn_audio.setOnClickListener(new View.OnClickListener() {
