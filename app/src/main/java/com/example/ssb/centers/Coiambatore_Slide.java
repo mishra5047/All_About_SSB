@@ -45,8 +45,8 @@ public class Coiambatore_Slide extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.slide);
-        btn_speech = (CircularImageView) findViewById(R.id.audio_btn);
-        maps_open = (CircularImageView) findViewById(R.id.maps_button);
+        btn_speech = findViewById(R.id.audio_btn);
+        maps_open = findViewById(R.id.maps_button);
         maps_open.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +57,7 @@ public class Coiambatore_Slide extends Activity {
             }
         });
 
-        back = (CircularImageView) findViewById(R.id.btn_back);
+        back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

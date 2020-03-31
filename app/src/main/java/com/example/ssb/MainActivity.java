@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
                 Animatoo.animateSlideUp(MainActivity.this);
 
             }
-        }, 1000);
+        }, 500);
 
 
     }

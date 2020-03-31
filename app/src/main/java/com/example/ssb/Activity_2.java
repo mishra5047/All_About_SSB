@@ -26,7 +26,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 public class Activity_2 extends Activity {
  LinearLayout layout1,layout2,layout3,layout4;
  TextView view1,view2,view3,view4;
- ImageView logo,Image1,Image2,Image3,Image4;
+ ImageView logo;
  AdView m_adview;
  String size;
     @Override
@@ -58,15 +58,15 @@ public class Activity_2 extends Activity {
        m_adview.loadAd(adRequest);
 
         //layout's
-        layout1 = (LinearLayout) findViewById(R.id.linearlayout_1_large);
-        layout2 = (LinearLayout) findViewById(R.id.linearlayout_2_large);
-        layout3 = (LinearLayout) findViewById(R.id.linearlayout_3_large);
-        layout4 = (LinearLayout) findViewById(R.id.linearlayout_4_large);
+        layout1 = findViewById(R.id.linearlayout_1_large);
+        layout2 = findViewById(R.id.linearlayout_2_large);
+        layout3 = findViewById(R.id.linearlayout_3_large);
+        layout4 = findViewById(R.id.linearlayout_4_large);
 
-        logo = (ImageView) findViewById(R.id.logo_info);
-        view1 = (TextView) findViewById(R.id.text_1);
-        view2 = (TextView) findViewById(R.id.schedule);
-       view3 = (TextView) findViewById(R.id.infoaboutcenter);
+        logo = findViewById(R.id.logo_info);
+        view1 = findViewById(R.id.text_1);
+        view2 = findViewById(R.id.schedule);
+       view3 = findViewById(R.id.infoaboutcenter);
 
 
        layout1.setOnClickListener(new View.OnClickListener() {
@@ -113,7 +113,9 @@ public class Activity_2 extends Activity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        startActivity(intent);
         Animatoo.animateSlideLeft(Activity_2.this);
     }
 

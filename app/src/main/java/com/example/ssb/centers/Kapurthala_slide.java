@@ -39,8 +39,8 @@ TextToSpeech textToSpeech;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.slide);
-        maps_open = (CircularImageView) findViewById(R.id.maps_button);
-        btn_audio = (CircularImageView) findViewById(R.id.audio_btn);
+        maps_open = findViewById(R.id.maps_button);
+        btn_audio = findViewById(R.id.audio_btn);
         maps_open.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
@@ -50,7 +50,7 @@ TextToSpeech textToSpeech;
     }
 });
 
-        back = (CircularImageView) findViewById(R.id.btn_back);
+        back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

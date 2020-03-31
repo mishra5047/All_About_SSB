@@ -24,7 +24,7 @@ class ScreenSize {
 
     String size;
 
-        if (screenInches < 5.2)
+        if (screenInches < 5.4)
         size = "Small";
         else
             size = "Large";

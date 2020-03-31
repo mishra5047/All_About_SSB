@@ -15,7 +15,7 @@ TextView textView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_what_is__ssb);
 
-       textView = (TextView) findViewById(R.id.more_text);
+       textView = findViewById(R.id.more_text);
        textView.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

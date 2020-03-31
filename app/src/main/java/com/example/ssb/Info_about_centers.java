@@ -48,7 +48,7 @@ public class Info_about_centers extends Activity {
             setContentView(R.layout.activity_info_about_centers);
 
         //logo
-        logo = (ImageView) findViewById(R.id.logo_new) ;
+        logo = findViewById(R.id.logo_new);
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +57,7 @@ public class Info_about_centers extends Activity {
             }
         });
         // SCN KAPURTHALA
-        punjab = (LinearLayout) findViewById(R.id.lin_1);
+        punjab = findViewById(R.id.lin_1);
         punjab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +69,7 @@ public class Info_about_centers extends Activity {
         });
 
           // ALLAHABAD
-        allahabd = (LinearLayout) findViewById(R.id.lin_2);
+        allahabd = findViewById(R.id.lin_2);
         allahabd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,7 +79,7 @@ public class Info_about_centers extends Activity {
             }
         });
          // BHOPAL
-        bhopal = (LinearLayout) findViewById(R.id.lin_3);
+        bhopal = findViewById(R.id.lin_3);
          bhopal.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -89,7 +89,7 @@ public class Info_about_centers extends Activity {
              }
          });
           // BANGALORE
-         bangalore = (LinearLayout) findViewById(R.id.lin_4);
+         bangalore = findViewById(R.id.lin_4);
          bangalore.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -100,7 +100,7 @@ public class Info_about_centers extends Activity {
          });
 
          // DEHRADUN
-        dehradun = (LinearLayout) findViewById(R.id.lin_5);
+        dehradun = findViewById(R.id.lin_5);
         dehradun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,7 +110,7 @@ public class Info_about_centers extends Activity {
             }
         });
 
-        mysore = (LinearLayout) findViewById(R.id.lin_6);
+        mysore = findViewById(R.id.lin_6);
         mysore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,7 +120,7 @@ public class Info_about_centers extends Activity {
             }
         });
 
-        gandhinagar = (LinearLayout) findViewById(R.id.lin_7);
+        gandhinagar = findViewById(R.id.lin_7);
         gandhinagar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,7 +130,7 @@ public class Info_about_centers extends Activity {
             }
         });
 
-        varanasi = (LinearLayout) findViewById(R.id.lin_8);
+        varanasi = findViewById(R.id.lin_8);
         varanasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -140,7 +140,7 @@ public class Info_about_centers extends Activity {
             }
         });
 
-        coiambatore =  (LinearLayout) findViewById(R.id.lin_9);
+        coiambatore = findViewById(R.id.lin_9);
         coiambatore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,7 +150,7 @@ public class Info_about_centers extends Activity {
             }
         });
 
-        bangalore_navy = (LinearLayout) findViewById(R.id.lin_10);
+        bangalore_navy = findViewById(R.id.lin_10);
         bangalore_navy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -160,7 +160,7 @@ public class Info_about_centers extends Activity {
             }
         });
 
-        bhopal_navy = (LinearLayout) findViewById(R.id.lin_11);
+        bhopal_navy = findViewById(R.id.lin_11);
         bhopal_navy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,7 +170,7 @@ public class Info_about_centers extends Activity {
             }
         });
 
-        vishakhapatnam = (LinearLayout) findViewById(R.id.lin_12);
+        vishakhapatnam = findViewById(R.id.lin_12);
         vishakhapatnam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -46,8 +46,8 @@ Window window;
                 else
                     Log.d("TAG","not loaded yet");
 
-        gmail = (ImageView) findViewById(R.id.gmail_image);
-        insta = (ImageView) findViewById(R.id.insta_image);
+        gmail = findViewById(R.id.gmail_image);
+        insta = findViewById(R.id.insta_image);
 
 
         gmail.setOnClickListener(new View.OnClickListener() {

@@ -37,9 +37,9 @@ public class Ssb_details extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.what_is_ssb);
 
-        btn_audio = (CircularImageView) findViewById(R.id.audio_btn_1);
+        btn_audio = findViewById(R.id.audio_btn_1);
 
-        back = (CircularImageView) findViewById(R.id.btn_back_olq);
+        back = findViewById(R.id.btn_back_olq);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
