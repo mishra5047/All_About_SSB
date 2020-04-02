@@ -39,15 +39,15 @@ public class Contact_activity extends AppCompatActivity {
 
         //ad
         // ca-app-pub-9684827030039892/7179379927
-
-        m_interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        m_interstitialAd.loadAd(new AdRequest.Builder().build());
-
-        m_interstitialAd.setAdListener(new AdListener() {
-            public void onAdLoaded(){
-                m_interstitialAd.show();
-            }
-        });
+//
+//        m_interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+//        m_interstitialAd.loadAd(new AdRequest.Builder().build());
+//
+//        m_interstitialAd.setAdListener(new AdListener() {
+//            public void onAdLoaded(){
+//                m_interstitialAd.show();
+//            }
+//        });
 
 
         add = findViewById(R.id.adView);

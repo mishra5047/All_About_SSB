@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/gradient_1"
+    android:background="@drawable/mega"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +19,6 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:scaleType="fitCenter"
-        android:layout_centerInParent="true"
         android:src="@drawable/logo_front"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="30dp" />
@@ -247,8 +246,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/dehradun"
-            android:src="@drawable/ashok"/>
+            android:src="@drawable/ashok_new"/>
     </androidx.cardview.widget.CardView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -569,7 +569,23 @@
                 android:textSize="14sp" />
 
             </LinearLayout>
+
         </RelativeLayout>
     </HorizontalScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        app:adSize="BANNER"
+        android:layout_below="@id/view_3"
+        android:layout_centerHorizontal="true"
+        app:adUnitId="ca-app-pub-9684827030039892/8620454107"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="665dp"/>
 </RelativeLayout>
 </ScrollView>

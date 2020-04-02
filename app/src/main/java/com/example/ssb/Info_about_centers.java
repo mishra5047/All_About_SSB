@@ -23,6 +23,8 @@ import com.example.ssb.centers.Gandhinagar_Slide;
 import com.example.ssb.centers.Mysore_Slide;
 import com.example.ssb.centers.Kapurthala_slide;
 import com.example.ssb.centers.Varanasi_Slide;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 public class Info_about_centers extends Activity {
@@ -32,6 +34,7 @@ public class Info_about_centers extends Activity {
     LinearLayout bhopal_navy, bangalore_navy;
     LinearLayout dehradun, mysore, gandhinagar, varanasi,coiambatore,vishakhapatnam;
     String size;
+    AdView m_adview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,12 @@ public class Info_about_centers extends Activity {
             setContentView(R.layout.activity_info_about_centers_small);
         else
             setContentView(R.layout.activity_info_about_centers);
+
+
+        m_adview = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        m_adview.loadAd(adRequest);
+
 
         //logo
         logo = findViewById(R.id.logo_new);

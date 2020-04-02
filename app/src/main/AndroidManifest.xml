@@ -7,9 +7,9 @@
         android:smallScreens="true"
         android:normalScreens="true" />
     
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
 
 
     <application
@@ -22,7 +22,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".Ssb_details">
         </activity>
-        <activity android:name=".Olq_first_screen"></activity>
+        <activity android:name=".Olq_first_screen"/>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -30,7 +30,7 @@
         <activity android:name=".Contact_activity" />
         <activity android:name=".centers.Allahabad_Slide" />
         <activity android:name=".centers.Kapurthala_slide" />
-        <activity android:name=".Olq"></activity>
+        <activity android:name=".Olq"/>
         <activity android:name=".Info_about_centers" />
         <activity android:name=".centers.Coiambatore_Slide" />
         <activity android:name=".centers.Mysore_Slide" />
