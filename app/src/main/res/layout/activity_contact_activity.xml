@@ -64,4 +64,19 @@
         android:layout_marginLeft="30dp"
         android:src="@drawable/insta_logo"/>
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9684827030039892/4181681491"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="665dp"/>
 </RelativeLayout>

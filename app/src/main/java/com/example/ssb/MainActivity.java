@@ -1,6 +1,9 @@
 package com.example.ssb;
 
 import android.app.Activity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -12,6 +15,8 @@ import android.util.Log;
 import android.view.Display;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.core.app.NotificationCompat;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.mikhaellopez.circularimageview.CircularImageView;
@@ -35,8 +40,22 @@ public class MainActivity extends Activity {
         else
             setContentView(R.layout.activity_main);
 
+        addNotification();
 
-        circularImageView = findViewById(R.id.logo_edited);
+        // notification
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
+        mBuilder.setSmallIcon(R.drawable.icon);
+        mBuilder.setContentTitle("Welcome To All About SSB");
+        mBuilder.setContentText("Find the answer to all your queries");
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        assert notificationManager != null;
+        notificationManager.notify(NotificationManager.IMPORTANCE_HIGH,mBuilder.build());
+
+
+        Intent resultIntent = new Intent(this, Activity_2.class);
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+        stackBuilder.addParentStack(Activity_2.class);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -49,6 +68,23 @@ public class MainActivity extends Activity {
         }, 500);
 
 
+    }
+
+    private void addNotification() {
+        NotificationCompat.Builder builder =
+                new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.info)
+                        .setContentTitle("Notifications Example")
+                        .setContentText("This is a test notification");
+
+        Intent notificationIntent = new Intent(this, MainActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(contentIntent);
+
+        // Add as notification
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(0, builder.build());
     }
 }
 

@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_1"
+    android:background="@drawable/mega"
     android:padding="10dp"
     tools:context=".Activity_2">
 
@@ -22,14 +22,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_toLeftOf="@id/logo_info"
-                android:src="@drawable/ashok"
+                android:src="@drawable/ashok_new"
                 android:layout_marginTop="70dp"/>
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_toRightOf="@id/logo_info"
-                android:src="@drawable/ashok"
+                android:src="@drawable/ashok_new"
                 android:layout_marginTop="70dp"/>
 
             <ImageView

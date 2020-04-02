@@ -1,6 +1,8 @@
 package com.example.ssb;
 
 import android.app.Activity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.app.NotificationCompat;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.android.gms.ads.AdRequest;
@@ -43,15 +46,12 @@ public class Activity_2 extends Activity {
             setContentView(R.layout.activity_2);
 
 
-
-
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
            @Override
            public void onInitializationComplete(InitializationStatus initializationStatus) {
 
            }
        });
-
 
        m_adview = findViewById(R.id.adView);
        AdRequest adRequest = new AdRequest.Builder().build();
@@ -68,6 +68,12 @@ public class Activity_2 extends Activity {
         view2 = findViewById(R.id.schedule);
        view3 = findViewById(R.id.infoaboutcenter);
 
+       logo.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               addNotification();
+           }
+       });
 
        layout1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,5 +126,21 @@ public class Activity_2 extends Activity {
     }
 
 
+    private void addNotification() {
+        NotificationCompat.Builder builder =
+                new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.info)
+                        .setContentTitle("Notifications Example")
+                        .setContentText("This is a test notification");
+
+        Intent notificationIntent = new Intent(this, MainActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(contentIntent);
+
+        // Add as notification
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(0, builder.build());
+    }
 
 }

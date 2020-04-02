@@ -9,7 +9,7 @@
     
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"></uses-permission>
 
 
     <application
@@ -23,6 +23,10 @@
         <activity android:name=".Ssb_details">
         </activity>
         <activity android:name=".Olq_first_screen"></activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
         <activity android:name=".Contact_activity" />
         <activity android:name=".centers.Allahabad_Slide" />
         <activity android:name=".centers.Kapurthala_slide" />

@@ -15,36 +15,44 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import static android.widget.Toast.LENGTH_SHORT;
 
 public class Contact_activity extends AppCompatActivity {
-ImageView insta, gmail;
-Button ad;
+    ImageView insta, gmail;
+    Button ad;
     Uri uri = Uri.parse("https://www.instagram.com/mishra_abhishek_24/");
     Intent instagram  = new Intent(Intent.ACTION_VIEW, uri);
-Window window;
- private InterstitialAd m_interstitialAd;
+    Window window;
+    AdView add;
+    InterstitialAd m_interstitialAd;
 
-
-@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_contact_activity);
+        setContentView(R.layout.activity_contact_activity);
         instagram.setPackage("com.instagram.android");
 
         //ad
-        m_interstitialAd = new InterstitialAd(this);
-        m_interstitialAd.setAdUnitId("ca-app-pub-9684827030039892/9756368034");
+        // ca-app-pub-9684827030039892/7179379927
+
+        m_interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
         m_interstitialAd.loadAd(new AdRequest.Builder().build());
 
-        if (m_interstitialAd.isLoaded()){
-                    m_interstitialAd.show();
-                }
-                else
-                    Log.d("TAG","not loaded yet");
+        m_interstitialAd.setAdListener(new AdListener() {
+            public void onAdLoaded(){
+                m_interstitialAd.show();
+            }
+        });
+
+
+        add = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        add.loadAd(adRequest);
 
         gmail = findViewById(R.id.gmail_image);
         insta = findViewById(R.id.insta_image);
@@ -82,4 +90,5 @@ Window window;
         super.onBackPressed();
         Animatoo.animateSlideLeft(Contact_activity.this);
     }
+
 }
