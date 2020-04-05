@@ -88,14 +88,6 @@ public class Gandhinagar_Slide extends Activity {
         models.add(new Model(R.drawable.contact_logo,contact,contact_details));
 
 
-        Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4),
-                getResources().getColor(R.color.color5),
-        };
-
         /* text to speech  */
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -109,7 +101,6 @@ public class Gandhinagar_Slide extends Activity {
 
                 );
 
-        colors = colors_temp;
         adapter = new Adapter(models,this);
         viewPager = findViewById(R.id.viewPager_1);
         viewPager.setAdapter(adapter);

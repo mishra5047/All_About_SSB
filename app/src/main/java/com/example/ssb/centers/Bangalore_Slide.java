@@ -89,14 +89,6 @@ public class Bangalore_Slide extends Activity {
         models.add(new Model(R.drawable.contact_logo,contact,contact_details));
 
 
-        Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4),
-                getResources().getColor(R.color.color5),
-        };
-
         /* text to speech  */
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -110,7 +102,6 @@ public class Bangalore_Slide extends Activity {
 
                 );
 
-        colors = colors_temp;
         adapter = new Adapter(models,this);
         viewPager = findViewById(R.id.viewPager_1);
         viewPager.setAdapter(adapter);
@@ -118,13 +109,6 @@ public class Bangalore_Slide extends Activity {
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (position < (adapter.getCount() - 1) && position < (colors.length - 1))
-                {
-                    viewPager.setBackgroundColor((Integer) argbEvaluator.evaluate(positionOffset,colors[position],colors[position + 1]));
-                }else
-                {
-                    viewPager.setBackgroundColor(colors[colors.length - 1]);
-                }
                 if (position == 0)
                {
                 btn_speech.setOnClickListener(new View.OnClickListener() {

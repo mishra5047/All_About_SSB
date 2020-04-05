@@ -22,19 +22,19 @@ package com.example.ssb.centers;
 
 public class Kapurthala_slide extends Activity {
     ViewPager viewPager;
-Adapter adapter;
-Integer[] colors = null;
-String hotel,hotel_detials;
-String center_info, info_details;
-String places, places_info;
-String reach,reach_detail;
-String contact_detials,contact;
-String maps_hint;
-CircularImageView maps_open, btn_audio,back;
-String latitude = "31.380803", longitude = "75.393501";
+    Adapter adapter;
+    Integer[] colors = null;
+    String hotel,hotel_detials;
+    String center_info, info_details;
+    String places, places_info;
+    String reach,reach_detail;
+    String contact_detials,contact;
+    String maps_hint;
+    CircularImageView maps_open, btn_audio,back;
+    String latitude = "31.380803", longitude = "75.393501";
     List<Model> models;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
-TextToSpeech textToSpeech;
+    TextToSpeech textToSpeech;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,8 +47,8 @@ TextToSpeech textToSpeech;
        String string =  "http://maps.google.com/maps?q=loc:" + latitude + "," + longitude + "SCN KAPURTHALA";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(string));
         startActivity(intent);
-    }
-});
+        }
+        });
 
         back = findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -60,20 +60,20 @@ TextToSpeech textToSpeech;
                 textToSpeech.stop();
             }
         });
-// information
-hotel_detials = getResources().getString(R.string.hotel_punjab);
-    info_details = getResources().getString(R.string.info_scn);
-    places_info = getResources().getString(R.string.places_punjab);
-    reach_detail = getResources().getString(R.string.transport_karputhala);
-    contact_detials = " Address:\tProfessor Colony, Kapurthala, Punjab 144602 \nTelephone No.\t01822-230127 . \n Email:\tshashe.57245@gmail.com";
+     // information
+        hotel_detials = getResources().getString(R.string.hotel_punjab);
+        info_details = getResources().getString(R.string.info_scn);
+        places_info = getResources().getString(R.string.places_punjab);
+        reach_detail = getResources().getString(R.string.transport_karputhala);
+        contact_detials = " Address:\tProfessor Colony, Kapurthala, Punjab 144602 \nTelephone No.\t01822-230127 . \n Email:\tshashe.57245@gmail.com";
 
-hotel = getResources().getString(R.string.hotel_nearby);
-center_info = getResources().getString(R.string.info_about_ssb_center);
-places = getResources().getString(R.string.places_to_visit);
-reach = getResources().getString(R.string.how_to_reach);
-contact = "Contact details of the SSB center";
+        hotel = getResources().getString(R.string.hotel_nearby);
+        center_info = getResources().getString(R.string.info_about_ssb_center);
+        places = getResources().getString(R.string.places_to_visit);
+        reach = getResources().getString(R.string.how_to_reach);
+        contact = "Contact details of the SSB center";
 
-// text to speech
+        // text to speech
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -84,7 +84,7 @@ contact = "Contact details of the SSB center";
                             || ttsLang == TextToSpeech.LANG_NOT_SUPPORTED);}}}
                             );
 
-models = new ArrayList<>();
+        models = new ArrayList<>();
         models.add(new Model(R.drawable.info,center_info,info_details));
         models.add(new Model(R.drawable.train,reach,reach_detail));
         models.add(new Model(R.drawable.hotel_logo,hotel,hotel_detials));
@@ -92,15 +92,6 @@ models = new ArrayList<>();
         models.add(new Model(R.drawable.contact_logo,contact,contact_detials));
 
 
-        Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4),
-                getResources().getColor(R.color.color5),
-        };
-
-        colors = colors_temp;
         adapter = new Adapter(models,this);
         viewPager = findViewById(R.id.viewPager_1);
         viewPager.setAdapter(adapter);
@@ -108,13 +99,6 @@ models = new ArrayList<>();
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (position < (adapter.getCount() - 1) && position < (colors.length - 1))
-                {
-                    viewPager.setBackgroundColor((Integer) argbEvaluator.evaluate(positionOffset,colors[position],colors[position + 1]));
-                }else
-                {
-                    viewPager.setBackgroundColor(colors[colors.length - 1]);
-                }
                 if (position == 0)
                 {
                     btn_audio.setOnClickListener(new View.OnClickListener() {

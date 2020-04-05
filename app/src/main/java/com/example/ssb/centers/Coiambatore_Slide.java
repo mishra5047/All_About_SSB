@@ -88,28 +88,20 @@ public class Coiambatore_Slide extends Activity {
         models.add(new Model(R.drawable.contact_logo,contact,contact_details));
 
 
-        Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4),
-                getResources().getColor(R.color.color5),
-        };
+
 
         /* text to speech  */
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-                if (status == TextToSpeech.SUCCESS) {
-                    int ttsLang = textToSpeech.setLanguage(Locale.US);
+                if (status == TextToSpeech.SUCCESS) { int ttsLang = textToSpeech.setLanguage(Locale.US);
 
                     if (ttsLang == TextToSpeech.LANG_MISSING_DATA
                             || ttsLang == TextToSpeech.LANG_NOT_SUPPORTED);}}}
 
                 );
 
-        colors = colors_temp;
         adapter = new Adapter(models,this);
         viewPager = findViewById(R.id.viewPager_1);
         viewPager.setAdapter(adapter);
