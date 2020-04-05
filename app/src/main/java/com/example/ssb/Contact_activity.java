@@ -4,23 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
-
-import static android.widget.Toast.LENGTH_SHORT;
 
 public class Contact_activity extends AppCompatActivity {
     ImageView insta, gmail;
@@ -34,7 +28,7 @@ public class Contact_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact_activity);
+        setContentView(R.layout.activity_contact);
         instagram.setPackage("com.instagram.android");
 
         //ad
