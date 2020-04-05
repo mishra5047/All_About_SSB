@@ -1,12 +1,9 @@
 <resources>
     <string name="app_name">SSB</string>
-    <string name="title_activity_whats_ssb">whats_ssb</string>
-    <string name="center">Select A SSB Center</string>
     <!--
     Center's name
     !-->
     <string name="name_kapurthala">S.C.NORTH \n Punjab</string>
-    <string name="name_allahabad">S.C.EAST, Allahabad  </string>
     <string name="bhopal_name">S.C.CENTRAL \n Bhopal</string>
     <string name="bangalore_name">S.C.SOUTH   \n Bangalore</string>
     <string name="dehradun_name">AFSB \n Dehradun</string>
@@ -14,12 +11,8 @@
     <string name="gandhi_nagar_name"> AFSB \n Gandhi Nagar</string>
     <string name="varanasi_name">AFSB \n Varanasi</string>
     <string name="coimbatore_name">NSB \n Coimbatore</string>
-    <string name="army_center">ARMY</string>
-    <string name="navy_center">NAVY</string>
-    <string name="airforce_center">AIR FORCE</string>
 
     <!-- kaputrthala !-->
-    <string name="kapurthala">SCN KAPURTHALA,PUNJAB</string>
     <string name="hotel_nearby">Hotels Nearby</string>
     <string name="hotel_punjab">There are no hotels in kapurthala in the vicinty of the SSB Board, The nearest accommodation available is
     a gurudwara that\'s at walking distance from the bus stand\nThe Name Of The Gurudwara Is State Gurudwara</string>
@@ -112,8 +105,6 @@ The President, Naval Selection Board \n INS Agrani Red Fields, Coimbatore-641018
     <string name="olq_1">1. Effective Intelligence</string>
     <string name="olq_2">2. Reasoning ability</string>
     <string name="olq_3">3. Organising ability</string>
-    <string name="olq_4">4. Power of expression</string>
-    <string name="olq_5">5. Social adaptability</string>
     <string name="olq_6">6. Cooperation</string>
     <string name="olq_7">7. Sense of Responsibility</string>
     <string name="olq_8">8. Initiative</string>
@@ -171,7 +162,6 @@ Such persons possess herculean physical and mental capabilities and can withstan
         \n 1.Conference\n 2.Announcement of recommended candidates
        \n Once the names of Recommended candidates are announced,they are retained for further processes and filling of forms.Rest all candidates are dropped off to the nearest railway or bus station.</string>
     <string name="swipe_left">Swipe Left For More Items</string>
-    <string name="info_about_ssb_centers">Info About SSB Centers</string>
 
 
     <!--

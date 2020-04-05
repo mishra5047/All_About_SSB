@@ -14,7 +14,9 @@
         app:cardCornerRadius="30dp"
         app:cardElevation="4dp"
         app:cardUseCompatPadding="true">
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,6 +55,6 @@
                 android:textAlignment="center"
                 android:textStyle="italic" />
         </RelativeLayout>
-
+        </ScrollView>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

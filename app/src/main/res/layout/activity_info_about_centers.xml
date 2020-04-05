@@ -65,7 +65,6 @@
                         app:cardCornerRadius="60dp">
 
                         <ImageView
-                            android:id="@+id/punjab_logo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/golden" />
@@ -73,7 +72,6 @@
 
                     <TextView
                         android:layout_weight="1"
-                        android:id="@+id/punjab_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/lobster"
@@ -82,6 +80,7 @@
                         android:text="@string/name_kapurthala"
                         android:textAlignment="center"
                         android:textColor="#000"
+                        android:layout_gravity="center"
                         android:textSize="17dp"
                         android:textStyle="normal" />
                 </LinearLayout>
@@ -103,14 +102,12 @@
                         app:cardCornerRadius="60dp">
 
                         <ImageView
-                            android:id="@+id/allahabad_logo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/fortification" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/a_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
@@ -141,14 +138,12 @@
                         app:cardCornerRadius="60dp">
 
                         <ImageView
-                            android:id="@+id/Bhopal_logo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/mosque_new" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/bhopal_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -179,14 +174,12 @@
                         app:cardCornerRadius="60dp">
 
                         <ImageView
-                            android:id="@+id/bangalore_logo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@drawable/bangalore_icon" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/bangalore_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -245,14 +238,12 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/dehradun"
                             android:src="@drawable/ashok_new"/>
                     </androidx.cardview.widget.CardView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:id="@+id/dehradun_name"
                         android:textAlignment="center"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
@@ -285,12 +276,10 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/mysore"
                             android:src="@drawable/hawa_mahal"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/mysore_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -326,12 +315,10 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/gandhi_nagar"
                             android:src="@drawable/fighter"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/gandhi_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -366,12 +353,10 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/vanarasi"
                             android:src="@drawable/om"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/vanarasi_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -433,13 +418,11 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/coimbatore"
                             android:src="@drawable/museum"/>
                     </androidx.cardview.widget.CardView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/coimbatore_name"
                         android:textAlignment="center"
                         android:layout_marginTop="5dp"
                         android:text="@string/coimbatore_name"
@@ -469,12 +452,10 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/bangalore_navy"
                             android:src="@drawable/bangalore_icon"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/bangalore_navy_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -510,12 +491,10 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/Bhopal_navy"
                             android:src="@drawable/mosque_new"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/Bhopal_navy_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -546,7 +525,6 @@
                         android:layout_weight="3">
 
                         <ImageView
-                            android:id="@+id/vishakapatnam"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_alignStart="@+id/layout_12"
@@ -555,7 +533,6 @@
                     </androidx.cardview.widget.CardView>
 
                     <TextView
-                        android:id="@+id/vishakapatnam_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
